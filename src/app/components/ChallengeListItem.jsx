@@ -7,7 +7,6 @@ export default function ChallengeListItem({ data, classNames, imgClassNames }) {
 	console.log(data);
 	return (
 		<Link
-			// to={`/challenges/${data.slug}`}
 			to={data.link}
 			target="_blank"
 			className={twMerge(
@@ -27,9 +26,6 @@ export default function ChallengeListItem({ data, classNames, imgClassNames }) {
 			</div>
 
 			<div class="font-bold">{data.name}</div>
-			{/* <div className="text-gray-600 line-clamp-3 dark:text-gray-300">
-				{data.description}
-			</div> */}
 		</Link>
 	);
 }

@@ -1,18 +1,14 @@
 import Team from "../components/Team";
 import { ContactDetails, ContactForm } from "./Contact.page";
-import { AboutESSTHSSB, AboutTSYP, AboutTunisiaSection } from "./Home.page";
+import { AboutMSA, AboutMTC } from "./Home.page";
 import { Fade } from "react-awesome-reveal";
 
 export default function AboutUs() {
 	return (
 		<div>
 			<Fade triggerOnce>
-				<AboutESSTHSSB />
-				<AboutTunisiaSection />
-			</Fade>
-
-			<Fade triggerOnce>
-				<AboutTSYP />
+				<AboutMSA />
+				<AboutMTC />
 			</Fade>
 
 			<Fade triggerOnce>

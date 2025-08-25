@@ -12,10 +12,6 @@ const routes = [
 		href: "/speakers",
 	},
 	{
-		title: "Awards",
-		href: "/awards",
-	},
-	{
 		title: "Speakers",
 		href: "/speakers",
 		mobileOnly: true,

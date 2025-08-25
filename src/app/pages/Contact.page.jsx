@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { SparrowSurvey } from "./Home.page";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
@@ -55,8 +54,6 @@ export default function ContactPage() {
 					</Link>
 				</div>
 			</section>
-
-			{false && <SparrowSurvey />}
 		</div>
 	);
 }

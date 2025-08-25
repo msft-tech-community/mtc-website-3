@@ -10,7 +10,6 @@ import ChallengeDetailsPage from "./app/pages/ChallengeDetails.page.jsx";
 import { ChallengesPage } from "./app/pages/Challenges.jsx";
 import ContactPage from "./app/pages/Contact.page.jsx";
 import HomePage from "./app/pages/Home.page.jsx";
-import { WinnersPage } from "./app/pages/Winners.jsx";
 import { setInitialTheme } from "./app/utils/themeSwitcher.js";
 
 setInitialTheme();
@@ -48,10 +47,6 @@ const router = createBrowserRouter([
 			{
 				path: "challenges",
 				element: <ChallengesPage />,
-			},
-			{
-				path: "awards",
-				element: <WinnersPage />,
 			},
 			{
 				path: "*",

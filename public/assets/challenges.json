@@ -3,12 +3,12 @@
 		"enabled": true,
 		"name": "Treasure Hunt",
 		"slug": "TH-MTC",
-		"logo": { "url": "https://i.imgur.com/2CAjaNE.png" }
+		"logo": { "url": "https://cdn.mlsacommunity.tech/events/treasurehunt.png" }
 	},
 	{
 		"enabled": true,
 		"name": "Pixel Rush",
 		"slug": "PR-MTC",
-		"logo": { "url": "https://i.imgur.com/QwhCPMT.png" }
+		"logo": { "url": "https://cdn.mlsacommunity.tech/events/pixelrush.png" }
 	}
 ]

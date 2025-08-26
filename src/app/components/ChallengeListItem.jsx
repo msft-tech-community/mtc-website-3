@@ -1,14 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import CustomImage from "./CustomImage";
 
 export default function ChallengeListItem({ data, classNames, imgClassNames }) {
 	console.log(data);
 	return (
-		<Link
-			to={data.link}
-			target="_blank"
+		<div
 			className={twMerge(
 				"block h-full rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:p-6",
 				classNames
@@ -25,7 +22,7 @@ export default function ChallengeListItem({ data, classNames, imgClassNames }) {
 				/>
 			</div>
 
-			<div class="font-bold">{data.name}</div>
-		</Link>
+			<div className="font-bold">{data.name}</div>
+		</div>
 	);
 }

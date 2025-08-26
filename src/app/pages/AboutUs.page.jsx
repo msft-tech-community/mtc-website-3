@@ -1,5 +1,5 @@
 import Team from "../components/Team";
-import { ContactDetails, ContactForm } from "./Contact.page";
+import { ContactForm } from "./Contact.page";
 import { AboutMSA, AboutMTC } from "./Home.page";
 import { Fade } from "react-awesome-reveal";
 
@@ -13,12 +13,6 @@ export default function AboutUs() {
 
 			<Fade triggerOnce>
 				<Team />
-			</Fade>
-
-			<Fade triggerOnce>
-				<div className="mt-4">
-					<ContactDetails />
-				</div>
 			</Fade>
 
 			<Fade triggerOnce>

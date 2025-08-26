@@ -1,22 +1,15 @@
-import LogoOnBlack from "../../assets/Logo on black (Custom).png";
-import LightLogo from "../../assets/main logo (3) (Custom).png";
-import Logo from "../../assets/main logo black (Custom).png";
-
 // memories assets
-// import memory2 from "../../assets/memories/356551992_226751036434551_8933123460754285924_n.jpg";
-import memory2 from "../../assets/memories/320777930_2311490175678507_4343281339549131430_n.jpg";
-import memory3 from "../../assets/memories/356597928_284785967424808_4014952816457019128_n.jpg";
-// import memory4 from "../../assets/memories/356638153_1045852983243072_6319438153536457058_n.jpg";
-import memory4 from "../../assets/memories/320890318_2005696479633031_3916944159098055484_n.jpg";
-import memory5 from "../../assets/memories/356779690_1021512152540830_7436088057197797763_n.jpg";
-// import memory6 from "../../assets/memories/356870057_205006965857961_5503311855628802179_n.jpg";
-import memory6 from "../../assets/memories/322250720_721543699171031_4597921719413023052_n.jpg";
-import memory7 from "../../assets/memories/356882005_272016892113248_6469925021621114931_n.jpg";
-// import memory8 from "../../assets/memories/357311497_1034866187885516_4807505043687124219_n.jpg";
-import memory8 from "../../assets/memories/321296201_1206807523592277_5346561523774336230_n.jpg";
-import memory9 from "../../assets/memories/358218740_2128948947437461_3099469010629116758_n.jpg";
-import memory10 from "../../assets/memories/358619396_222649417397966_6373005098322693727_n.jpg";
+import memory1 from "../../assets/memories/memory1.png";
+import memory2 from "../../assets/memories/memory2.png";
+import memory3 from "../../assets/memories/memory3.png";
+import memory4 from "../../assets/memories/memory4.png";
+import memory5 from "../../assets/memories/memory5.png";
+import memory6 from "../../assets/memories/memory6.png";
+import memory7 from "../../assets/memories/memory7.png";
+import memory8 from "../../assets/memories/memory8.png";
+import memory9 from "../../assets/memories/memory9.png";
 
+import msaLogo from "../../assets/logo.webp"
 import { Link } from "react-router-dom";
 import Team from "../components/Team";
 
@@ -108,7 +101,7 @@ export default function HomePage() {
 
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
-					<AboutCongress />
+					<Perks />
 				</section>
 			</Fade>
 			<Fade triggerOnce>
@@ -119,11 +112,6 @@ export default function HomePage() {
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<WorkedWith />
-				</section>
-			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					<SponsoredBy />
 				</section>
 			</Fade>
 			<Fade triggerOnce>
@@ -144,8 +132,8 @@ export default function HomePage() {
 						</h1>
 						<iframe
 							loading="lazy"
-							title="tsyp location"
-							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12851.062625886407!2d10.5328555!3d36.3664548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13029e020677bc0d%3A0x82fe8c3faf57e873!2sDiar%20Lemdina!5e0!3m2!1sen!2stn!4v1682280141809!5m2!1sen!2stn"
+							title="mtc location"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.859667406162!2d77.33048757549759!3d28.543937475713264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44e80a9461b%3A0x302ec8d3d5cb8d1a!2sAmity%20University%20Noida!5e0!3m2!1sen!2sin!4v1756150799216!5m2!1sen!2sin"
 							className="w-full rounded-2xl shadow-lg"
 							height="500"
 							style={{
@@ -167,37 +155,38 @@ export function AboutMTC(params) {
 		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
 			<div className="col-span-6 mx-auto md:order-last">
 				<CustomImage
-					src={"https://i.imgur.com/EpXVkCB.png"}
+					src={
+						msaLogo
+					}	
 					className="mx-auto h-52 object-contain sm:h-96"
-					alt="TSYP 11"
+					alt="Microsoft Student Ambassadors"
 				/>
 			</div>
 			<div className="col-span-6">
 				<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-					About IEEE Tunisia Section.
+					About Microsoft Student Ambassadors
 				</h1>
 				<h1 className="mb-4 text-lg font-medium  lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					Founded in 2008, the IEEE Tunisia Section is dedicated to spreading
-					IEEE initiatives throughout Tunisia. This is achieved through
-					educational and technical programs, networking opportunities, and the
-					advancement of technology and its applications to address humanitarian
-					challenges. The section actively supports chapters, special interest
-					groups, student activities, and student awards. IEEE has firmly
-					established its presence in the Tunisian engineering community, with
-					over 43 Student Branches located across various engineering schools,
-					faculties, and universities.
+					The Microsoft Student Ambassadors (MSA) program is a global initiative
+					by Microsoft that empowers university students to become community
+					leaders, tech evangelists, and innovators on campus. Ambassadors gain
+					access to exclusive resources like Azure credits, technical
+					certifications, and mentorship opportunities, while also learning
+					leadership skills by organizing workshops, hackathons, and tech talks.
+					The program follows a milestone-based journey—Alpha, Beta, and
+					Gold—rewarding students for continuous learning and community impact.
+					Beyond technical growth, it provides a platform to connect with a
+					global network of peers and Microsoft professionals, enabling students
+					to inspire others while shaping their own careers in technology.
 				</h1>
 				<div>
 					<Link
-						// type="button"
-						to={"https://ieee.tn/"}
+						to={"https://mvp.microsoft.com/"}
 						target="_blank"
 						rel="noreferrer"
 						className="relative inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 					>
-						{/* <div className="flex flex-wrap items-center justify-start gap-2"> */}
-						<span className="">Learn more IEEE Tunisia Section</span>
-						{/* </div> */}
+						<span className="">Learn more about MSA Program</span>
 					</Link>
 				</div>
 			</div>
@@ -210,30 +199,29 @@ export function AboutMSA() {
 		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
 			<div className="col-span-6 mx-auto">
 				<CustomImage
-					src={LogoOnBlack || Logo}
-					className={`mx-auto mb-8 hidden h-52 object-contain dark:block ${
-						LogoOnBlack ? "" : "dark:invert"
-					} sm:h-48`}
-					alt="TSYP 11"
-				/>
-
-				<CustomImage
-					src={LightLogo}
-					className="mx-auto h-56 object-contain dark:hidden sm:h-60"
-					alt="TSYP 11"
+					src={memory1}
+					className={`mx-auto mb-8 hidden h-52 object-contain dark:block sm:h-72`}
+					alt="mtc 11"
 				/>
 			</div>
 			<div className="col-span-6">
 				<h1 className="mb-4 text-4xl font-bold tracking-tight lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-					About IEEE TSYP Congress.
+					About Microsoft Tech Community
 				</h1>
 				<p className="mb-4  text-lg font-medium lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					The Tunisian Students and Young Professionals (TSYP) Congress is an
-					annual gathering of IEEE members in Tunisia. Organized by IEEE ESSTHS
-					Student Branch and IEEE Tunisia Section, the 11th edition provides a
-					unique opportunity to delve into current and future challenges in
-					science and engineering, connect with the national and international
-					IEEE network, and share experiences, under the theme Silicon Valley.
+					The Microsoft Tech Community (MTC) is a student-led initiative built
+					around the Microsoft Student Ambassadors (MSA) program, designed to
+					bring together learners passionate about technology, innovation, and
+					collaboration. These communities exist at the university or regional
+					level, where ambassadors and core members organize workshops,
+					hackathons, study groups, and hands-on projects to spread knowledge of
+					Microsoft technologies like Azure, AI, and Power Platform. The MTC
+					provides a supportive environment for students to learn by doing,
+					connect with industry professionals, and collaborate on real-world
+					challenges. By participating, members not only upskill in cutting-edge
+					tech but also build leadership, teamwork, and communication skills,
+					making the community a gateway to both personal growth and career
+					opportunities in the global tech ecosystem.
 				</p>
 			</div>
 		</section>
@@ -242,91 +230,92 @@ export function AboutMSA() {
 
 function Memories() {
 	return (
-		<div>
-			<h2 className="mb-12 text-center text-4xl font-bold">
-				Memories from Previous Editions
-			</h2>
-			<div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-				<div className="grid gap-6">
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory10}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory2}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory3}
-							alt=""
-						/>
-					</div>
-				</div>
-				<div className="grid gap-6">
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory4}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory5}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory6}
-							alt=""
-						/>
-					</div>
-				</div>
-				<div className="grid gap-6">
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory7}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory8}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="hidden h-full w-full rounded-2xl object-cover md:block "
-							src={memory9}
-							alt=""
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
+<div>
+  <h2 className="mb-12 text-center text-4xl font-bold">
+    Memories from Previous Events
+  </h2>
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+    <div className="grid gap-6">
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory1}
+          alt=""
+        />
+      </div>
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory2}
+          alt=""
+        />
+      </div>
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory3}
+          alt=""
+        />
+      </div>
+    </div>
+    <div className="grid gap-6">
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory4}
+          alt=""
+        />
+      </div>
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory5}
+          alt=""
+        />
+      </div>
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory6}
+          alt=""
+        />
+      </div>
+    </div>
+    <div className="grid gap-6">
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory7}
+          alt=""
+        />
+      </div>
+      <div>
+        <CustomImage
+          className="h-full w-full rounded-2xl object-contain"
+          src={memory8}
+          alt=""
+        />
+      </div>
+      <div>
+        <CustomImage
+          className="hidden h-full w-full rounded-2xl object-contain md:block"
+          src={memory9}
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
 	);
 }
 
-function AboutCongress() {
+function Perks() {
 	return (
 		<div className="hadow-xl bbg-white rounded-2xl py-24 sm:py-10">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<h2 className="mb-12 text-center text-4xl font-bold">
-					About TSYP Congress 2023
+					Microsoft Tech Community Perks
 				</h2>
 				<div className="mx-auto mt-10 grid max-w-lg items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-12">
 					<div className="col-span-4 flex flex-col items-center gap-4">
@@ -337,7 +326,8 @@ function AboutCongress() {
 						/>
 						<div className="text-2xl font-bold">Network</div>
 						<p className="text-center">
-							Network and build relationships with other volunteers within IEEE.
+							Network and build relationships with other people at technical
+							events.
 						</p>
 					</div>
 					<div className="col-span-4 flex flex-col items-center gap-4">
@@ -348,7 +338,7 @@ function AboutCongress() {
 						/>
 						<div className="text-2xl font-bold">Learn</div>
 						<p className="text-center">
-							To provide an opportunity for delegates to gain information and
+							To provide an opportunity for attendees to gain information and
 							training skills.
 						</p>
 					</div>
@@ -360,7 +350,8 @@ function AboutCongress() {
 						/>
 						<div className="text-2xl font-bold">Plan ahead</div>
 						<p className="text-center">
-							Collectively shape the future and goals of the IEEE.
+							Collectively shape the future and goals of the Microsoft
+							Ecosystem.
 						</p>
 					</div>
 				</div>
@@ -372,78 +363,62 @@ function AboutCongress() {
 function WorkedWith() {
 	return (
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<h2 className="mb-12 text-center text-4xl font-bold">Powered By</h2>
+			<h2 className="mb-12 text-center text-4xl font-bold">Trusted By</h2>
 			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
 				<a
-					href="https://ieee.tn/"
+					href="https://zomato.com/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"https://i.imgur.com/EpXVkCB.png"}
-						alt="IeeeTunisia"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				{true && (
-					<a
-						href="https://yp.ieee.tn/"
-						target="_blank"
-						rel="noreferrer"
-						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-					>
-						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"https://i.imgur.com/0JYgUki.png"}
-							alt="YpTunisia"
-							// width={200}
-							// height={200}
-						/>
-					</a>
-				)}
-				<a
-					href="http://www.essths.rnu.tn/public/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
-				>
-					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"https://i.imgur.com/Sdkbxfe.png"}
-						alt="essthsLogo"
-						// width={200}
-						// height={200}
+						src={
+							"https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png"
+						}
+						alt="Zomato"
 					/>
 				</a>
 				<a
-					href="https://uso.rnu.tn/"
+					href="https://reskilll.com/"
 					target="_blank"
 					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"https://i.imgur.com/HalSgE1.png"}
-						alt="university of sousse"
-						// width={200}
-						// height={200}
+						src={
+							"https://storage.googleapis.com/reskilll/Reskilll-logo-500px500px%20(1)%201cj4CbQU.png"
+						}
+						alt="Reskilll"
 					/>
 				</a>
 				<a
-					href="https://essths.ieee.tn/"
+					href="https://reskilll.com/"
 					target="_blank"
 					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"https://i.imgur.com/Sdkbxfe.png"}
-						alt="IEEE ESSTHS SB"
-						// width={200}
-						// height={200}
+						src={
+							"https://storage.googleapis.com/reskilll/azdev-logo-OhXLx4O.png"
+						}
+						alt="Reskilll"
+					/>
+				</a>
+				<a
+					href="https://amity.edu/"
+					target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+						src={
+							"https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png"
+						}
+						alt="Amity"
 					/>
 				</a>
 			</div>
@@ -451,138 +426,3 @@ function WorkedWith() {
 	);
 }
 
-function SponsoredBy() {
-	return (
-		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<h2 className="mb-12 text-center text-4xl font-bold">IEEE Partners</h2>
-			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-				<a
-					href="https://ieeer8.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/mFTrYL2.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://ieeer8.org/student-activities/sa-committee/sac/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] rounded-full bg-white object-contain p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/uO5riCW.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://ieee-aess.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/cV1QOQg.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://yp.ieee.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/rJu8XVi.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://mtt.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/zGQmYnj.jpg"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://www.ieee-ies.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/Usd3WQr.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://life.ieee.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/y3Ulw1e.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://entrepreneurship.ieee.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/cpdzd8G.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://ieee-edusociety.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/RxAnk66.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-			</div>
-		</div>
-	);
-}

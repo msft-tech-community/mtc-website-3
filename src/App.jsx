@@ -6,7 +6,6 @@ import Speakers from "./app/components/Speakers.jsx";
 // import CanvasCursor from "./app/components/CanvasCursor.jsx";
 import { ErrorPage } from "./app/error-page.jsx";
 import AboutUs from "./app/pages/AboutUs.page.jsx";
-import ChallengeDetailsPage from "./app/pages/ChallengeDetails.page.jsx";
 import { ChallengesPage } from "./app/pages/Challenges.jsx";
 import ContactPage from "./app/pages/Contact.page.jsx";
 import HomePage from "./app/pages/Home.page.jsx";
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
 				path: "/",
 				// index: true,
 				element: <HomePage />,
-			},
-			{
-				path: "challenges/:challengeSlug",
-				element: <ChallengeDetailsPage />,
 			},
 			{
 				path: "speakers",

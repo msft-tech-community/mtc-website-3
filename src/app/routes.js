@@ -12,21 +12,11 @@ const routes = [
 		href: "/speakers",
 	},
 	{
-		title: "Speakers",
-		href: "/speakers",
-		mobileOnly: true,
-	},
-	{
-		title: "Challenges",
-		href: "/challenges",
-		mobileOnly: true,
-	},
-	{
-		title: "About us",
+		title: "About Us",
 		href: "/about-us",
 	},
 	{
-		title: "Contact us",
+		title: "Contact Us",
 		href: "/contact",
 	},
 ];

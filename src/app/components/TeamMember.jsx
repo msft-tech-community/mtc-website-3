@@ -88,7 +88,7 @@ export default function TeamMember() {
 								</div>
 								<p>
 									{currentTeamMember.talk?.description ||
-										"TSYP 11 Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates."}
+										"MTC Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates."}
 								</p>
 							</div>
 							<div>
@@ -118,7 +118,7 @@ const speaker = {
 	talk: {
 		title: "Keynote",
 		description:
-			"TSYP 11 Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
+			"MTC Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
 		descriptionWithFormatting: {
 			value: {
 				schema: "dast",
@@ -131,7 +131,7 @@ const speaker = {
 								{
 									type: "span",
 									value:
-										"TSYP 11 Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
+										"MTC Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
 								},
 							],
 						},

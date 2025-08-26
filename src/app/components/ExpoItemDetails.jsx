@@ -107,31 +107,3 @@ function ExpoDetails({ data }) {
 		</div>
 	);
 }
-
-const companyMock = {
-	name: "AWS",
-	description:
-		"Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.",
-	slug: "vercel",
-	website: "https://vercel.com/",
-	discord: null,
-	youtube: "",
-	cardImage: null,
-	logo: {
-		url: "https://www.datocms-assets.com/35255/1665957463-sponsor-logo-vercel.png",
-	},
-	links: [
-		{
-			text: "Signup",
-			url: "https://vercel.com/signup?utm_source=nextjs_conf&utm_medium=web&utm_campaign=nextjs_conf_platform_page_sponsor_signup",
-		},
-		{
-			text: "Contact Sales",
-			url: "https://vercel.com/contact/sales?utm_source=nextjs_conf&utm_medium=web&utm_campaign=nextjs_conf_platform_page_sponsor_contact_sales",
-		},
-		{
-			text: "Blog",
-			url: "https://vercel.com/blog?utm_source=nextjs_conf&utm_medium=web&utm_campaign=nextjs_conf_platform_page_sponsor_blog",
-		},
-	],
-};

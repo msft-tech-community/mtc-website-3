@@ -1,18 +1,14 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Fragment } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import routes from "../routes";
 import ThemeToggle from "./ThemeToggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faFacebook,
 	faGithub,
-	faInstagram,
-	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import hich from "../../assets/favicon.ico";
 
 export default function NavModal({ setToggleModal, toggleModal }) {
 	return (
@@ -82,7 +78,7 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 									>
 										<div className="px-4 sm:px-6">
 											<Dialog.Title className="text-lg font-bold">
-												TSYP 11
+												MTC
 											</Dialog.Title>
 										</div>
 										<div className="mt-6 flex-1 px-4 sm:px-6">
@@ -118,29 +114,10 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 										</div>
 
 										<div className="flex items-center justify-between">
-											<div className="px-4 sm:px-6">
-												<Dialog.Title className="text-sm font-semibold md:text-base">
-													{false && (
-														<Link
-															to="https://hichemfantar.com/"
-															target="_blank"
-															rel="noreferrer"
-															className="flex items-center"
-														>
-															<img
-																src={hich}
-																className="h-6 w-6 object-cover"
-																alt="Hichem Fantar"
-															/>
-														</Link>
-													)}
-													{/* TSYP 11 © 2023 */}
-												</Dialog.Title>
-											</div>
 
 											<div className="flex items-center gap-4 px-4 sm:px-6">
 												<a
-													href="https://github.com/hichemfantar/TSYP-11-Official-Website"
+													href="https://github.com/msft-tech-community"
 													target="_blank"
 													rel="noreferrer"
 													className="text-gray-800 dark:text-gray-300"
@@ -149,34 +126,6 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 														icon={faGithub}
 														className="block h-5 w-5"
 													/>
-												</a>
-
-												<a
-													href="https://www.facebook.com/ieee.tsyp"
-													target="_blank"
-													rel="noreferrer"
-													className="text-gray-600 dark:text-gray-400"
-													aria-label="facebook page"
-												>
-													<FontAwesomeIcon icon={faFacebook} />
-												</a>
-												<a
-													href="https://www.instagram.com/ieee_tsyp/"
-													target="_blank"
-													rel="noreferrer"
-													className="text-gray-600 dark:text-gray-400"
-													aria-label="instagram page"
-												>
-													<FontAwesomeIcon icon={faInstagram} />
-												</a>
-												<a
-													href="https://www.linkedin.com/company/ieee-tsyp/"
-													target="_blank"
-													rel="noreferrer"
-													className="text-gray-600 dark:text-gray-400"
-													aria-label="linkedin page"
-												>
-													<FontAwesomeIcon icon={faLinkedin} />
 												</a>
 
 												<ThemeToggle />

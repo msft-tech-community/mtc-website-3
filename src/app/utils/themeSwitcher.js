@@ -1,37 +1,37 @@
-function toggleThemeClassname(bool) {
+function toggleThemeClassname(isLight) {
 	["dark"].map((className) =>
-		document.documentElement.classList.toggle(className, !bool ? true : false)
+		document.documentElement.classList.toggle(className, !isLight) // dark when not light
 	);
 
 	["light"].map((className) =>
-		document.documentElement.classList.toggle(className, bool ? true : false)
+		document.documentElement.classList.toggle(className, isLight)
 	);
 }
 
 export default function toggleDarkTheme() {
 	const isDark = document.documentElement.classList.contains("dark");
 
+	// toggle and store
 	localStorage.setItem("darkMode", !isDark);
-
 	toggleThemeClassname(isDark);
 }
 
 export function setInitialTheme() {
-	const l = localStorage.getItem("darkMode");
+	const stored = localStorage.getItem("darkMode");
 
-	if (!l) {
-		toggleThemeClassname(true);
-
-		localStorage.setItem("darkMode", false);
-
+	// New users: force dark
+	if (stored === null) {
+		toggleThemeClassname(false); // false = not light → dark
+		localStorage.setItem("darkMode", true);
 		return;
 	}
 
-	if (JSON.parse(l) === true) {
+	// Existing users
+	if (JSON.parse(stored) === true) {
+		// darkMode = true → dark
 		toggleThemeClassname(false);
-
-		return;
+	} else {
+		// darkMode = false → light
+		toggleThemeClassname(true);
 	}
-
-	toggleThemeClassname(true);
 }
